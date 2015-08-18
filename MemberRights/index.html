@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>我的会员卡</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ededed;
+        }
+
+        .center {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .head {
+            height: 50px;
+            line-height: 50px;
+            background: #7c6baf;
+            padding-top: 10px;
+            padding-bottom: 8px;
+        }
+
+        .head-left {
+            height: 30px;
+            padding: 10px 5px 10px 5px;
+        }
+
+        .shop_name {
+            font-size: 14px;
+            color: #fff;
+            padding-right: 0;
+            padding-left: 0;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .line {
+            width: 96%;
+            margin: 0 2%;
+            padding: 10px 0;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .line-text{
+            width: 96%;
+            margin: 0 2%;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .line-gap{
+            margin: 5px auto;
+        }
+
+        .line-margin{
+            margin: auto 10px;
+            line-height: 20px;
+        }
+        .size16{
+            font-size: 16px;
+        }
+
+        .size12{
+            font-size: 12px;
+        }
+        .dark{
+            color: #333;
+        }
+
+        .light{
+            color: #777;
+        }
+        .purple,.purple:visited,.purple:hover{
+            color: #7c6baf;
+            line-height: 24px;
+        }
+
+        .no-underline,.no-underline:visited,.no-underline:hover{
+            text-decoration: none;
+        }
+        .icon-link {
+            width: 27px;
+            padding: 6px 10px;
+        }
+        .footer {
+            line-height: 35px;
+            color: #a4a4a4;
+            text-align: center;
+            clear: both;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="head container-fluid">
+    <div class="head-left pull-left col-md-2 col-xs-2">
+        <img class="pull-left" src="img/back.png" height="12">
+    </div>
+    <div class="shop_name col-md-8 col-xs-8">会员特权</div>
+</div>
+<div class="accordion" id="accordion2">
+    <div class="accordion-group line-gap">
+        <div class="accordion-heading line">
+            <a class="accordion-toggle line-margin purple no-underline size16" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                普卡会员特权<img src="img/link.png" class="pull-right icon-link">
+            </a>
+        </div>
+        <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner line-text ">
+                <div class="purple line-margin">普卡会员特权1</div>
+                <div class="light line-margin">自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容</div>
+                <div class="purple line-margin">普卡会员特权2</div>
+                <div class="light line-margin">自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容</div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group line-gap">
+        <div class="accordion-heading line">
+            <a class="accordion-toggle line-margin purple no-underline  size16" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                银卡会员特权<img src="img/link.png" class="pull-right icon-link">
+            </a>
+        </div>
+        <div id="collapseTwo" class="accordion-body collapse">
+            <div class="accordion-inner line-text">
+                <div class="purple line-margin">银卡会员特权1</div>
+                <div class="light line-margin">自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容</div>
+                <div class="purple line-margin">银卡会员特权2</div>
+                <div class="light line-margin">自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容</div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group line-gap">
+        <div class="accordion-heading line">
+            <a class="accordion-toggle line-margin purple no-underline size16" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                金卡会员特权<img src="img/link.png" class="pull-right icon-link">
+            </a>
+        </div>
+        <div id="collapseThree" class="accordion-body collapse">
+            <div class="accordion-inner line-text">
+                <div class="purple line-margin">金卡会员特权1</div>
+                <div class="light line-margin">自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容</div>
+                <div class="purple line-margin">金卡会员特权2</div>
+                <div class="light line-margin">自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容自定义内容</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">@智慧商场</div>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+</body>
+</html>
