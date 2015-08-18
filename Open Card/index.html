@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>我的会员卡</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ededed;
+        }
+
+        input {
+            outline: none;
+            border: none;
+        }
+
+        .center {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .head {
+            height: 50px;
+            line-height: 50px;
+            background: #7c6baf;
+            padding-top: 10px;
+            padding-bottom: 8px;
+        }
+
+        .head-left {
+            height: 30px;
+            padding: 10px 5px 10px 5px;
+        }
+
+        .shop_name {
+            font-size: 14px;
+            color: #fff;
+            padding-right: 0;
+            padding-left: 0;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .line {
+            padding: 10px 0;
+            background-color: #fff;
+        }
+
+        .bottom-border {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .text-right-align {
+            text-align: right;
+        }
+
+        .inputbox {
+            width: 95%;
+        }
+
+        .size16 {
+            font-size: 16px;
+        }
+
+        .size12 {
+            font-size: 12px;
+        }
+
+        .dark {
+            color: #333;
+        }
+
+        .light {
+            color: #777;
+        }
+
+        .purple {
+            color: #7c6baf;
+        }
+
+        .icon {
+            width: 16px;
+        }
+
+        .btn-purple, .btn-purple:hover {
+            width: 90%;
+            height: 40px;
+            background-color: #7c6baf;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .btn-white, .btn-white:hover {
+            width: 100px;
+            height: 30px;
+            background-color: #fff;
+            color: #7c6baf;
+            border: 1px solid #7c6baf;
+            border-radius: 5px;
+            margin: -10px auto;
+        }
+
+        .footer {
+            line-height: 35px;
+            color: #a4a4a4;
+            text-align: center;
+            clear: both;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="head container-fluid">
+    <div class="head-left pull-left col-md-2 col-xs-2">
+        <img class="pull-left" src="img/back.png" height="12">
+    </div>
+    <div class="shop_name col-md-8 col-xs-8">绑定实体卡</div>
+</div>
+<div style="background-color: #fff">
+    <div class="container" style="width: 96%">
+        <div class="row line bottom-border">
+            <div class="col-sm-3 col-xs-3 text-right-align">姓名</div>
+            <div class="col-sm-9 col-xs-9"><input type="text" class="inputbox" id="exampleInputName2"
+                                                  placeholder="您的姓名"></div>
+        </div>
+        <div class="row line bottom-border">
+            <div class="col-sm-3 col-xs-3 text-right-align">性别</div>
+            <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 男
+                </label>
+            </div>
+            <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 女
+                </label>
+            </div>
+        </div>
+        <div class="row line bottom-border">
+            <div class="col-sm-3 col-xs-3 text-right-align">生日</div>
+            <div class="col-sm-9 col-xs-9"><input type="text" class="inputbox"
+                                                  id="exampleInputName2" placeholder="请选择年月日"></div>
+        </div>
+        <div class="row line bottom-border">
+            <div class="col-sm-3 col-xs-3 text-right-align">常去门店</div>
+            <div class="col-sm-9 col-xs-9"><input type="text" class="inputbox" id="exampleInputName2"
+                                                  placeholder="请输入门店名称"></div>
+        </div>
+        <div class="row line bottom-border">
+            <div class="col-sm-3 col-xs-3 text-right-align">手机号</div>
+            <div class="col-sm-5 col-xs-5"><input type="text" class="inputbox" id="exampleInputName2"
+                                                  placeholder="请输入手机号"></div>
+            <div class="col-sm-4 col-xs-4">
+                <button class="btn-white">获取验证码</button>
+            </div>
+        </div>
+        <div class="row line bottom-border">
+            <div class="col-sm-3 col-xs-3 text-right-align">验证码</div>
+            <div class="col-sm-9 col-xs-9"><input type="text" class="inputbox" id="exampleInputName2"
+                                                  placeholder="请输入收到的验证码"></div>
+        </div>
+        <div class="row line bottom-border">
+            <div class="col-sm-3 col-xs-3 text-right-align">邮箱</div>
+            <div class="col-sm-9 col-xs-9"><input type="email" class="inputbox" id="exampleInputName2"
+                                                  placeholder="请输入邮箱地址"></div>
+        </div>
+        <div class="row line">
+            <div class="col-sm-3 col-xs-3 text-right-align">身份证号</div>
+            <div class="col-sm-9 col-xs-9"><input type="text" class="inputbox" id="exampleInputName2"
+                                                  placeholder="请输入身份证号"></div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-purple center" type="submit"><img src="img/icon_shop_right_white.png" class="icon">&nbsp;&nbsp;&nbsp;提交
+</button>
+<div class="footer">@智慧商场</div>
+<!--<script type="text/javascript" src="bootstrap.min.js"></script>-->
+<!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+<!--<script>-->
+    <!--$('#datetimepicker').datetimepicker({-->
+        <!--format: 'yyyy-mm-dd hh:ii'-->
+    <!--});</script>-->
+</body>
+</html>
