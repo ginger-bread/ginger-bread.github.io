@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>我的会员卡</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ededed;
+        }
+
+        .size12 {
+            font-size: 12px;
+        }
+
+        .size16 {
+            font-size: 16px;
+        }
+
+        .colorpurple {
+            color: #7c6baf;
+        }
+
+        a.colorgrey {
+            text-decoration: none;
+            color: #777;
+        }
+
+        .colorpurple {
+            text-decoration: none;
+            color: #7c6baf;
+        }
+
+        .colorgrey {
+            color: #777;
+        }
+
+        .light {
+            color: #999;
+        }
+
+        .card-back {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+        }
+
+        .bottom-border {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .back {
+            background-color: #fff;
+            margin: 5px 0;
+        }
+
+        .line {
+            width: 90%;
+            margin: 0 5%;
+            padding: 10px 0;
+        }
+
+        .level {
+            position: absolute;
+            right: 13%;
+            color: #999;
+        }
+
+        .cardandtittle {
+            /*clear: both;*/
+            width: 66%;
+            margin: 0 auto;
+        }
+
+        .card {
+            margin-top: 13%;
+            width: 100%;
+            z-index: 100;
+            position: relative;
+        }
+
+        .blackmask {
+            z-index: 1000;
+            height: 40px;
+            position: relative;
+            bottom: 40px;
+            color: #fff;
+            padding: 9px 10px;
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 0 0 5px 5px;
+            display: block;
+        }
+
+        a.blackmask, a:active.blackmask {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .center {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            /*background-color:rgba(0,0,0,.3) ;*/
+            position: absolute;
+            z-index: 2000;
+        }
+
+        .tips {
+            margin-top: -28px;
+        }
+
+        .icon {
+            width: 11%;
+            padding: 0 5px 0 10px;
+        }
+
+        .icon-link {
+            width: 8%;
+            padding: 3px 10px;
+        }
+
+        .footer {
+            line-height: 35px;
+            color: #a4a4a4;
+            text-align: center;
+        }
+
+        #dialog p {
+            margin: 0 0 12px;
+            height: 24px;
+            line-height: 24px;
+            background: #CCCCCC;
+        }
+
+        #dialog p.close {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        #dialog p.close a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div><img src="img/card-back.png" class="card-back img-responsive"></div>
+    <div class="cardandtittle">
+        <img src="img/card_default.png" class="card">
+        <a class="blackmask">未分配卡号，点击开卡</a>
+    </div>
+    <p class="tips text-center size12 colorpurple">使用时向服务员出示此卡</p>
+</div>
+<div class="back">
+    <div class="line bottom-border">
+        <a href="#" class="colorpurple"><img src="img/icon-1.png" class="icon">智慧商场测试帐号1会员特权<img src="img/link.png"
+                                                                                                 class="pull-right icon-link"></a><br/>
+    </div>
+    <div class="line">
+        <a href="#" class="colorgrey"><img src="img/icon-2.png" class="icon">普卡尊享<span
+            class="size12 level">当前会员等级</span><img src="img/link.png"
+                                                   class="pull-right icon-link"></a><br/>
+    </div>
+</div>
+<div class="back">
+    <div class="line bottom-border">
+        <a href="#" class="colorgrey"><img src="img/icon-3.png" class="icon">绑定我的会员卡<img src="img/link.png"
+                                                                                         class="pull-right icon-link"></a><br/>
+    </div>
+    <div class="line">
+        <a href="#" class="colorgrey"><img src="img/icon-4.png" class="icon">办理新的会员卡<img src="img/link.png"
+                                                                                         class="pull-right icon-link"></a><br/>
+    </div>
+</div>
+<div class="back">
+    <div class="line bottom-border">
+        <a href="#" class="colorgrey"><img src="img/icon-5.png" class="icon">我的卡券<img src="img/link.png"
+                                                                                      class="pull-right icon-link"></a><br/>
+    </div>
+    <div class="line bottom-border">
+        <a href="#" class="colorgrey"><img src="img/icon-6.png" class="icon">我的积分<img src="img/link.png"
+                                                                                      class="pull-right icon-link"></a><br/>
+    </div>
+    <div class="line bottom-border">
+        <a href="#" class="colorgrey"><img src="img/icon-7.png" class="icon">我的储值<img src="img/link.png"
+                                                                                      class="pull-right icon-link"></a><br/>
+    </div>
+    <div class="line">
+        <a href="#" class="colorgrey"><img src="img/icon-8.png" class="icon">消费记录<img src="img/link.png"
+                                                                                      class="pull-right icon-link"></a><br/>
+    </div>
+</div>
+<div class="back">
+    <div class="line">
+        <a href="#" class="colorgrey"><img src="img/icon-9.png" class="icon">门店地址及电话<img src="img/link.png"
+                                                                                         class="pull-right icon-link"></a>
+    </div>
+</div>
+<div class="footer">
+    @智慧商场
+</div>
+<!--弹窗开始-->
+<!--<div class="alert">-->
+    <!--<div class="back center">-->
+        <!--<div class="size16 bottom-border">智慧商场官方客服</div>-->
+        <!--<div>010-52881038</div>-->
+        <!--<div>2069392900</div>-->
+        <!--<div class="size12 light">工作时间：周一至周日9:00-21:00</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--弹窗结束-->
+</body>
+</html>
